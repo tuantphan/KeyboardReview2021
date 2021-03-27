@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Keyboard Image</h2>
+<ul>
+    {% for i in image_list %}
+    <img src="{{i.keyboardimage}}" alt="Keyboard" width="400" height="200">
+    {% endfor %}
+</ul>
+
+{%  endblock %}

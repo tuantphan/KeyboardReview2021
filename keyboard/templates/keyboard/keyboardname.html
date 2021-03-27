@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Keyboard Name</h2>
+<ul>
+    {% for n in name_list %}
+    <li><a href="{% url 'detail' id=n.id %}"> {{ n.keyboardname }}</a></li>
+    {% endfor %}
+</ul>
+
+{%  endblock %}
